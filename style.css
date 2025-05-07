@@ -1,0 +1,32 @@
+/* Define keyframes for the animation */
+@keyframes buttonAnimation {
+    0% {
+        transform: scale(1);
+        background-color: #3498db;
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: #2ecc71;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #3498db;
+    }
+}
+
+/* Button style */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Apply animation when hovered */
+button:hover {
+    animation: buttonAnimation 1s infinite;
+}
